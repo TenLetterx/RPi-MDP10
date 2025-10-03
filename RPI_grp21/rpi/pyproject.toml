@@ -1,0 +1,21 @@
+[project]
+name = "rpi"
+version = "0.1.0"
+description = "rpi-team stuff (swag)"
+readme = "README.md"
+requires-python = "==3.9"
+dependencies = [
+    "colorzero>=2.0",
+    "pybluez",
+    "pyserial>=3.5",
+    "requests>=2.32.3",
+    "picamera2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.3",
+]
+
+[tool.uv.sources]
+pybluez = { git = "https://github.com/pybluez/pybluez.git" }
